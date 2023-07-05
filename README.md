@@ -1,1 +1,1 @@
-shell basics
+navigating into shell
