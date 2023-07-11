@@ -1,0 +1,2 @@
+#!/bin/bash
+water_base="water" stir_base="stir" bestchol_base="bestchol" water=$(echo "$WATER" | tr "$water_base" "01234567") stir=$(echo "$STIR" | tr "$stir_base" "01234567") result=$((water + stir)) result_base=$(echo "obase=bestchol" | bc <<< "$result") echo "Result: $result_base"
